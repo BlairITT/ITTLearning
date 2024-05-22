@@ -1,0 +1,46 @@
+header,
+footer {
+  height: 150px;
+  background: rgb(234, 255, 234);
+}
+header > h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+.content {
+  max-width: 950px;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "arial";
+}
+h1 {
+  font-size: 60px;
+}
+input {
+  width: 200px;
+  height: 40px;
+  text-align: left;
+}
+form {
+  margin: auto;
+}
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.image-banner {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+footer {
+  display: flex;
+  flex: 1;
+  height: 150px;
+}
+.footer-section {
+  width: 100%;
+}
