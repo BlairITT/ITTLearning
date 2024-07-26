@@ -5,9 +5,32 @@
     <link rel="stylesheet" href="style.css" />
     <title>About Page</title>
   </head>
-  <body>
+  <body class="body">
     <a href="index.html">Home</a>
-    <h2>My About Page!</h2>
-    <nav>nav stuff</nav>
+    <h1>Ask AI!</h1>
+
+    <form id="dataForm">
+      <label for="inputField">Enter Data:</label>
+      <input type="text" id="inputField" name="inputField" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://js.puter.com/v2/"></script>
+
+    <script>
+      document
+        .getElementById("dataForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const inputField = document.getElementById("inputField").value;
+          const resultDiv = document.getElementById("result");
+
+          console.log(inputField);
+          puter.ai.chat(inputField).then((response) => {
+            puter.print(response);
+          });
+        });
+    </script>
   </body>
 </html>

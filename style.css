@@ -1,5 +1,9 @@
 body {
-  margin: 0;
+  margin: auto;
+  max-width: 900px;
+}
+.title {
+  margin: 0 50%;
 }
 header,
 footer {
@@ -9,6 +13,9 @@ footer {
 header > h1 {
   text-align: center;
   padding-top: 50px;
+}
+nav {
+  background-color: red;
 }
 nav ul {
   display: flex;
